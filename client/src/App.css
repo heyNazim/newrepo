@@ -1,0 +1,130 @@
+/* From Uiverse.io by SteveBloX */ 
+.maincard {
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.maincard:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.maincard:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+/* Form */
+/* From Uiverse.io by aboalsim114 */ 
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: linear-gradient(to bottom, #000000, #000000);
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg);
+  width: 370px;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  animation: form-animation 0.5s ease-in-out;
+}
+
+@keyframes form-animation {
+  from {
+    transform: rotateX(-30deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  color: rgb(255, 255, 255);
+  border: 2px solid #3b8df2;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.input:hover,
+.input:focus {
+  border-color: #3b8df2;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05) rotateY(20deg);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3b8df2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: rotateX(-10deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+  background-color: #0077be;
+  font-size: 17px;
+  transform: scale(1.05) rotateY(20deg) rotateX(10deg);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+/* table */
+.table{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* blogcard */
+.blogcard{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  width: 360px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.blogcard:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
